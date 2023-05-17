@@ -23,7 +23,7 @@ echo ""
 echo "================================================================================="
 echo "Adding Helm Chart to  REPO"
 echo "================================================================================="
-keptn add-resource --project=$KEPTN_PROJECT --service=$KEPTN_SERVICE_NAME --all-stages --resource=./keptn/helloworld-chart-0.1.0.tgz --resourceUri=charts/$KEPTN_SERVICE_NAME.tgz
+keptn add-resource --project=$KEPTN_PROJECT --service=$KEPTN_SERVICE_NAME --all-stages --resource=./keptn/helloservice.tgz --resourceUri=charts/$KEPTN_SERVICE_NAME.tgz
 
 
 # echo ""
