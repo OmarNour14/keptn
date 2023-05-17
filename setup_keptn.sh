@@ -23,16 +23,16 @@ echo ""
 echo "================================================================================="
 echo "Adding Helm Chart to  REPO"
 echo "================================================================================="
-keptn add-resource --project=$KEPTN_PROJECT --service=$KEPTN_SERVICE_NAME --all-stages --resource=./keptn/helloservice.tgz --resourceUri=charts/$KEPTN_SERVICE_NAME.tgz
+keptn add-resource --project=$KEPTN_PROJECT --service=$KEPTN_SERVICE_NAME --all-stages --resource=./keptn/helloservice.tgz --resourceUri=helm/$KEPTN_SERVICE_NAME.tgz
 
 
-# echo ""
-# echo "================================================================================="
-# echo "Triggering Delivery of the helloservice v0.1.1 Artifact (Follow progress in the Bridge)"
-# echo "================================================================================="
+echo ""
+echo "================================================================================="
+echo "Triggering Delivery of the helloservice v0.1.1 Artifact (Follow progress in the Bridge)"
+echo "================================================================================="
 keptn trigger delivery \
 --project=hello-world \
 --service=hello-world-service \
 --sequence=delivery \
---image="onoureldin14/hello-world:latest" \
+--image="ghcr.io/podtato-head/podtatoserver:v0.1.1" \
 --labels=version="v0.1.1"
