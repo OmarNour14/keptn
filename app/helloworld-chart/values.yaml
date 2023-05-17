@@ -5,10 +5,7 @@
 replicaCount: 1
 
 
-image:
-  repository: onoureldin14/hello-world
-  tag: latest
-  pullPolicy: IfNotPresent
+image: onoureldin14/hello-world:latest
 
 
 imagePullSecrets: []
