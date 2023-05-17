@@ -3,7 +3,7 @@ echo "# Please enter Git details now    #"
 echo "#=================================#"
 
 read -p 'Azure DevOps User: ' AZDO_USER
-read -p 'Azure DevOps Token: ' AZDO_TOKEN
+echo 'Azure DevOps Token: ' && read -s AZDO_TOKEN
 read -p 'Azure DevOps Repo name: ' AZDO_REPO_NAME
 
 
@@ -17,5 +17,4 @@ echo "#=================================#"
 echo "         Git Details Set:          "
 echo "#=================================#"
 echo ""
-echo "Azure DevOps Token: $AZDO_TOKEN"
 echo "Azure DevOps repo: $AZDO_REPO_URL"
