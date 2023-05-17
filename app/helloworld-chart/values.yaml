@@ -7,7 +7,6 @@ replicaCount: 1
 
 image: onoureldin14/hello-world:latest
 
-
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -35,11 +34,8 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  name: hello-world
-  type: LoadBalancer
-  externalPort: 8081
-  internalPort: 8005
-
+  type: ClusterIP
+  port: 8005
 
 ingress:
   enabled: false
