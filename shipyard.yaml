@@ -9,3 +9,5 @@ spec:
         - name: "delivery"
           tasks:
             - name: "deployment"
+              properties:
+                deploymentstrategy: "user_managed"
