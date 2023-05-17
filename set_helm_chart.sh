@@ -14,10 +14,12 @@ echo "# Generate the helm chart for hello world  #"
 echo "#=================================#"
 
 helm create hello-world
-
+sleep 5
 echo ""
 echo "#=================================#"
 echo "# Package the hello world chart  #"
 echo "#=================================#"
 
 helm package hello-word/
+
+cd
