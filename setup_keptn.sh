@@ -7,11 +7,11 @@ echo "==========================================================================
 keptn create project hello-world --shipyard ./keptn/shipyard.yaml --git-remote-url $AZDO_REPO_URL --git-user $AZDO_USER --git-token $AZDO_TOKEN
 keptn create service hello-world-service --project=hello-world
 
-# echo ""
-# echo "================================================================================="
-# echo "Adding Helm Chart (hello-world.tgz) to Git REPO"
-# echo "================================================================================="
-# keptn add-resource --project=hello-world --service=hello-world-service --all-stages --resource=./helm/hello-world-0.1.0.tgz --resourceUri=charts/hello-world-0.1.0.tgz
+echo ""
+echo "================================================================================="
+echo "Adding Helm Chart (hello-world.tgz) to Git REPO"
+echo "================================================================================="
+keptn add-resource --project=hello-world --service=hello-world-service --all-stages --resource=./keptn/app/helloworld-chart-0.1.0.tgz --resourceUri=charts/hello-world-0.1.0.tgz
 
 
 # echo ""
