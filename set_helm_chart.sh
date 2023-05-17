@@ -20,4 +20,4 @@ echo "#=================================#"
 echo "# Package the hello world chart  #"
 echo "#=================================#"
 
-helm package helm/hello-word/
+helm package hello-word/
