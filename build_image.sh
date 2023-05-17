@@ -35,4 +35,6 @@ echo " Packaging Helm chart            "
 echo "================================================================================="
 helm package ./app/helloworld-chart/ --debug
 
+cd
+
 

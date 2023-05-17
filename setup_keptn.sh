@@ -34,5 +34,4 @@ keptn trigger delivery \
 --project=hello-world \
 --service=hello-world-service \
 --sequence=delivery \
---image="onoureldin14/hello-world:latest" \
---labels=version="v0.1.0"
+--image="onoureldin14/hello-world:latest"
