@@ -1,0 +1,11 @@
+kind: "Shipyard"
+metadata:
+  name: "shipyard-delivery"
+spec:
+  stages:
+    - name: "dev"
+      sequences:
+        - name: "delivery"
+          tasks:
+            - name: "deployment"
+              properties: "direct"
